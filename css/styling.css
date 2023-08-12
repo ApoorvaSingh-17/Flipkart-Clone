@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --main-bg-color: #2370f4;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: var(--main-bg-color);
+    font-family: 'Mulish', sans-serif;
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.logo img{
+    width: 88px;
+    padding: 0px 25px;
+}
+nav ul{
+    display: flex;
+    flex-direction: flex-start;
+    align-items: center;
+    height: 60px;
+}
+nav ul li{
+    list-style: none;
+    text-transform: capitalize;
+    padding: 0px 23px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-weight: bolder;
+}
+
+ .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.7rem 1rem;
+    width: 31vw;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+    
+  }
+  
+  .search__input:hover, .search__input:focus {
+    box-shadow: 0 0 1em #00000013;
+  }
+  
+  .search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+  }
+  
+  .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #ccc;
+  }
+  
+  .search__input:focus + .search__button {
+    background-color: #f0eeee;
+  }
+  
+  .search__button {
+    border: none;
+    background-color: #f4f2f2;
+    margin-top: .1em;
+  }
+  
+  .search__button:hover {
+    cursor: pointer;
+  }
+  
+  .search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: #b4b4b4;
+  }  
+.container{
+    min-height: calc(100vh - 60px - 9vh);
+}
+.top{
+    display: inline-flex;
+    justify-content:  center;
+    margin: 5px 65px;
+}
+.top img{
+    margin: 0px 30px;
+}
+.top figcaption{
+    margin: 0px 41px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.slider img{
+  display: block;
+  margin: 6px auto;
+  width: 90vw;
+  overflow: hidden;
+}
+.cart{
+  max-width: 93vw;
+  margin:  37px auto;
+     
+}
+.cart h2{
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+}
+.part{
+  display:inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px 30px;
+}
+.cart-items{
+  
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px 15px;
+  overflow: scroll
+}
+.cart-items img{
+  width: 160px;
+}
+.cart-items figcaption{
+  font-family: 'Mulish', sans-serif;
+  font-size: 14px;
+}
+
+footer{
+    height: 9vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Mulish', sans-serif;
+}
